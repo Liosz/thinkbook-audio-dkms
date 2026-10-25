@@ -1,0 +1,1 @@
+/lib/modules/6.12.113+deb13-amd64/updates/dkms/snd-hda-scodec-cs35l41.ko.xz

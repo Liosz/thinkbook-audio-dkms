@@ -1,0 +1,13 @@
+# Build leftovers (prebuilt/*.ko.xz is intentional and tracked)
+*.o
+*.o.cmd
+*.ko
+*.mod
+*.mod.c
+.tmp_versions/
+Module.symvers
+modules.order
+
+# Distribution archives
+*.tar.gz
+*.zip

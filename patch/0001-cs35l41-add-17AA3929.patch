@@ -1,0 +1,18 @@
+--- a/sound/pci/hda/cs35l41_hda_property.c
++++ b/sound/pci/hda/cs35l41_hda_property.c
+@@ -136,6 +136,7 @@
+ 	{ "17AA38C8", 4, INTERNAL, { CS35L41_RIGHT, CS35L41_LEFT, CS35L41_RIGHT, CS35L41_LEFT }, 0, 2, -1, 1000, 4500, 24 },
+ 	{ "17AA38F9", 2, EXTERNAL, { CS35L41_RIGHT, CS35L41_LEFT, 0, 0 }, 0, 2, -1, 0, 0, 0 },
+ 	{ "17AA38FA", 2, EXTERNAL, { CS35L41_RIGHT, CS35L41_LEFT, 0, 0 }, 0, 2, -1, 0, 0, 0 },
++	{ "17AA3929", 4, INTERNAL, { CS35L41_RIGHT, CS35L41_LEFT, CS35L41_RIGHT, CS35L41_LEFT }, 0, 2, -1, 1000, 4500, 24 },
+ 	{}
+ };
+ 
+@@ -560,6 +561,7 @@
+ 	{ "CSC3551", "17AA38C8", generic_dsd_config },
+ 	{ "CSC3551", "17AA38F9", generic_dsd_config },
+ 	{ "CSC3551", "17AA38FA", generic_dsd_config },
++	{ "CSC3551", "17AA3929", generic_dsd_config },
+ 	{}
+ };
+ 

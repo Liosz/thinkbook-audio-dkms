@@ -1,0 +1,3 @@
+# This project targets Linux; keep LF endings in the working tree even on Windows.
+* text=auto eol=lf
+*.ko.* binary

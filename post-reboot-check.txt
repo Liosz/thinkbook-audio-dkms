@@ -1,0 +1,14 @@
+Post-reboot check: 2026-10-25T20:21:50+08:00
+Kernel: 6.12.113+deb13-amd64
+
+Bound i2c amps: 4
+  i2c-CSC3551:00-cs35l41-hda.0~3
+
+Playback test: pw-play 660Hz 3s via PipeWire -> exit 0
+During playback: all 4 amps runtime_status = active (observed live)
+
+After playback (autosuspend is expected):
+  i2c-CSC3551:00-cs35l41-hda.0                       suspended
+  i2c-CSC3551:00-cs35l41-hda.1                       suspended
+  i2c-CSC3551:00-cs35l41-hda.2                       suspended
+  i2c-CSC3551:00-cs35l41-hda.3                       suspended

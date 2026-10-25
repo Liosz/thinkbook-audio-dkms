@@ -1,0 +1,49 @@
+=== kernel ===
+6.12.113+deb13-amd64
+
+=== DKMS ===
+snd-hda-scodec-cs35l41-thinkbook/1.0, 6.12.113+deb13-amd64, x86_64: installed (Original modules exist)
+
+=== resolved cs35l41 module ===
+/lib/modules/6.12.113+deb13-amd64/updates/dkms/snd-hda-scodec-cs35l41.ko.xz
+
+=== i2c amps bound to cs35l41-hda ===
+总计 0
+--w------- 1 root root 4096 10月25日 20:20 bind
+lrwxrwxrwx 1 root root    0 10月25日 20:20 i2c-CSC3551:00-cs35l41-hda.0 -> ../../../../devices/pci0000:00/0000:00:19.0/i2c_designware.4/i2c-5/i2c-CSC3551:00-cs35l41-hda.0
+lrwxrwxrwx 1 root root    0 10月25日 20:20 i2c-CSC3551:00-cs35l41-hda.1 -> ../../../../devices/pci0000:00/0000:00:19.1/i2c_designware.5/i2c-6/i2c-CSC3551:00-cs35l41-hda.1
+lrwxrwxrwx 1 root root    0 10月25日 20:20 i2c-CSC3551:00-cs35l41-hda.2 -> ../../../../devices/pci0000:00/0000:00:19.0/i2c_designware.4/i2c-5/i2c-CSC3551:00-cs35l41-hda.2
+lrwxrwxrwx 1 root root    0 10月25日 20:20 i2c-CSC3551:00-cs35l41-hda.3 -> ../../../../devices/pci0000:00/0000:00:19.1/i2c_designware.5/i2c-6/i2c-CSC3551:00-cs35l41-hda.3
+lrwxrwxrwx 1 root root    0 10月25日 20:20 module -> ../../../../module/snd_hda_scodec_cs35l41_i2c
+--w------- 1 root root 4096 10月25日 20:20 uevent
+--w------- 1 root root 4096 10月25日 20:20 unbind
+
+=== modprobe workaround ===
+options snd_sof_intel_hda_generic hda_model=1028:0c4d
+
+=== PipeWire audio sinks ===
+Audio
+ ├─ Devices:
+ │      48. Arrow Lake cAVS                     [alsa]
+ │  
+ ├─ Sinks:
+ │      55. Arrow Lake cAVS HDMI / DisplayPort 3 Output [vol: 1.00]
+ │      56. Arrow Lake cAVS HDMI / DisplayPort 2 Output [vol: 1.00]
+ │      57. Arrow Lake cAVS HDMI / DisplayPort 1 Output [vol: 1.00]
+ │  *   58. Arrow Lake cAVS Speaker             [vol: 0.55]
+ │  
+ ├─ Sources:
+ │      59. Arrow Lake cAVS Stereo Microphone   [vol: 1.00]
+ │  *   60. Arrow Lake cAVS Digital Microphone  [vol: 1.00]
+ │  
+ ├─ Filters:
+ │  
+ └─ Streams:
+       227. Mutter                                                      
+            230. output_FR       > Speaker:playback_FR	[init]
+            231. output_FL       > Speaker:playback_FL	[init]
+
+Video
+
+Test tone (optional):
+  timeout 5 speaker-test -D hw:0,0 -c 2 -t sine -f 440 -l 1

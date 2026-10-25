@@ -1,0 +1,3 @@
+dda36a3dcb57b30d8763585f72842585a0ac0b9be9314e869c162f19a83b0a20  prebuilt/6.12.113+deb13-amd64/snd-hda-scodec-cs35l41-i2c.ko.xz
+2e109d58e21f997d46e1db564c83052447262179330d27d25faf31b76c862327  prebuilt/6.12.113+deb13-amd64/snd-hda-scodec-cs35l41.ko.xz
+93737dd1803cd19d9050b1eb977c39ff3cc7c7eff7a880e40003178e8a980083  prebuilt/6.12.113+deb13-amd64/snd-hda-scodec-cs35l41-spi.ko.xz
