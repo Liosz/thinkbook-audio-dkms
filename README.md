@@ -160,3 +160,7 @@ sudo ./install.sh
 - 模块由 DKMS 用本机 MOK 密钥自动签名；当前 Secure Boot 关闭。如果以后开启 Secure Boot，需要先把该 MOK 密钥 enroll 到固件里，否则模块无法加载。
 - 使用通用 CS35L41 固件，非本机专用调音。
 - 这是自编译内核模块，不能像官方内核那样保证；但失效时只会影响声音，不会阻止系统启动。
+
+## 许可证
+
+`dkms-src/` 中的代码源自 Linux 内核（GPL-2.0），本仓库整体以 [GPL-2.0](LICENSE) 发布。
